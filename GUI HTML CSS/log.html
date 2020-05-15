@@ -1,0 +1,94 @@
+<!-- Login page -->
+<!-- -->
+<!-- -->
+
+<html>
+<head>
+<title> Login </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+<!-- for navigation bar starts -->
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: right;}
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size:18px;
+  margin-left:20px ;
+  <!--font-size:15px;    changed additioni-->
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a.active {background-color: cornsilk; color: black;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+<!-- for navigation bar ends -->
+
+<!-- for img bg -->
+body, html {
+  height: 100%;
+  margin-top: 0;
+}
+.bg {
+  background-image: url("bg4.jpg");
+  /* Full height */
+  height:89%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+<!-- for img bg end -->
+</style>
+
+
+</head>
+
+<body>
+<ul class="topnav" style="padding-right:60px;";>
+  <li><a  href="#home" >Help</a></li>
+  <li ><a class="active" href="#about" >Home</a></li>
+</ul>
+
+
+<!-- <div style="color:white; margin-top:5px; font-family:verdana; width:160px; height:40px; font-size:30px";> Password </div>
+<input style="margin-top:10px;"; type="text"; name="pswd"; required>
+	 > -->
+<div class="bg" style="padding-top:45px";>
+<div style="margin-left :55px;  padding-top:20px; background-image:url('bg8.jpg');  width:600px; height:380px;  border-radius:20px; ">
+	<center><p style="background-color:#000099	; color:white;   padding:5px; margin-bottom:10px; font-family:courier; width:300px; height:60px; font-size:35px; border-radius:10px; "; > <b style="color:white; opacity:.;";>Login</b> <p></center>
+	<form action="land.html";>
+	<div style="margin-left:230px; padding-top:10px; color:white; font-family:verdana; width:160px; height:40px; font-size:25px";> Username </div>
+	<input style="margin-left:130px; margin-top:10px; width:350px;";" type="text"; name="nm"; required>
+	<div style="margin-left:230px; color:white; font-family:verdana; width:160px; height:20px; font-size:25px; margin-top:20px; ";> Password </div>
+	<input style="margin-left:130px; margin-top:20px; width:350px;"; type="text"; name="pswd"; required>
+	
+	
+	<input type="submit";  class="btn btn-success" style="background-color:white;  width:130px; color:#000099; margin-top:50px; margin-left:160px;" value="Login";>
+	<a href="reg.html" class="btn btn-success" style="background-color:white; width:130px;  color:#000099; margin-top:50px; margin-left:30px;";> Sign Up </a>	
+	<br>
+	<center><a href="reg.html" target="_self"; style="color:white";> <b>Forgot password?</b> </a></center>
+	</form>
+</div>
+</div>
+</body>
+</html>
